@@ -142,7 +142,7 @@
     height: 618px;
     border-radius: 10px;
     background-color: var(--color-um);
-    /* background-color: white; */
+    background-color: red;
 
 }
 
@@ -356,7 +356,7 @@
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
 
 }
