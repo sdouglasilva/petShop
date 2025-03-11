@@ -53,7 +53,7 @@
     position: relative;
     z-index: 2;
     top: 60px;
-    width: 323px;
+    /* width: 323px; */
     
 }
 
@@ -63,8 +63,9 @@
     width: 100vw;
     height: 90px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
+    z-index: 0;
     bottom: 30px;
     box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.7);
 
@@ -72,31 +73,32 @@
 
 /* edição dos itens da barra de navegação  */
 .navbar-item {
-    grid: 2;
     color: var(--color-seis);
-    display: flex;
-    padding-left: 55px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 20px;
+    letter-spacing: 5px;
+}
+.navbar-item:nth-child(2){
+    padding-right: 80px;
+}
+.navbar-item:nth-child(3){
+    padding-left: 250px;
 }
 
 /* edição do body da aplicação  */
 .body-style {
     background-color: var(--color-tres);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin-bottom: 100px;
 }
 
-.main {
+.main{
     /* position: relative;
     z-index: 0; */
     display: flex;
@@ -107,70 +109,67 @@
     width: 100vw;
     height: 100vh;
     border: none;
-    padding-top: 150px;
-    padding-bottom: 450px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.7);
     border-radius: 16px;
 
 }
 
 .container-title {
+    margin-top: 150px;
     position: relative;
-    top: 30px;
-    z-index: 9;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    /* padding: 10px; */
+    top: 70px;
+    /* left: 50vh;*/    
+    z-index: 9; 
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: end; */
     
 }
 
 .container-title h1 {
+    
+    padding: 0px 50px 0px 50px;
+
+
     margin-top: 100px;
     background-color: #fff;
     color: var(--color-seis);
-    height: 70px;
-    width: 439px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.7);
 }
 .carrousel-back {
+    margin: 50px;
     margin-bottom: 100px;
-    width: 1111px;
-    height: 618px;
+    width: 95vw;
+    height: 70vh;
     border-radius: 10px;
     background-color: var(--color-um);
     /* background-color: white; */
 
 }
 
-/* .moldura-carrossel {
+.moldura-carrossel {
     position: relative;
-    z-index: 3;
-    width: 1111px;
-    height: 618px;
-} */
+}
 
 .moldura-carrossel img {
     position: relative;
     z-index: 3;
-    margin-bottom: -10px;
-    width: 1111px;
-    height: 618px;
+    width: 95vw;
+    height: 70vh;
     border-radius: 14px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7)
 
 }
 
 .carrousel {
-    position: relative;
-    bottom: 650px;
+    /* position: relative;  */
+    /* bottom: 650px; */
     /* padding: 15px; */
     /* max-width: 640px; */
     /* margin: auto auto; */
-    height: 600px;
+    /* height: 600px; */
    
 } 
 
@@ -406,3 +405,70 @@
     top: 20px;
     width: 180px !important;
 }
+
+
+
+@media (max-width: 375px) {
+    .body-style {
+
+    }
+    .navbar {
+        background-color: var(--color-ciznza-barra);
+        display: flex;
+        
+        /* justify-content: space-around; */
+        top: 20px;
+        position: fixed;
+        z-index: 9;
+        box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.7);
+    
+    }
+    
+    /* edição dos itens da barra de navegação  */
+    .navbar-item {
+        color: var(--color-seis);
+        text-decoration: none;
+        font-family: 'poppins', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .navbar-item:nth-child(1){
+        /* padding-right: 0px; */
+    }
+    .navbar-item:nth-child(2){
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+    .navbar-item:nth-child(3){
+        padding-left: 0px;
+    }
+    .navbar-item:nth-child(4){
+        /* padding-right: 0px; */
+    }
+    .header {
+        margin-block-start: 40px;
+        letter-spacing: 1.00em;
+        line-height: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        height: 180px;
+    }
+    /* .div-top {
+        background-color: var(--color-um);
+        width: 100vw;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position: relative;
+        top: 20px;
+    } */
+  }
