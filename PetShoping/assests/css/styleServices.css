@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+:root {
+    --color-um: #BDC7BD;
+    --color-um--um: #BDC7BD;
+    --color-um--dois: #E4E4E4;
+    --color-ciznza-barra: #D9D9D9;
+    --color-ciznza-barra-transparente: 200, 200, 200 ;
+    --color-dois: #6A9C6A;
+    --color-tres: #3C733C;
+    --color-quatro: #194719;
+    --color-cinco: #093309;
+    --color-seis: #013301;
+}
+
+
+
+/* parte de cima da aplicação  */
+/* Parte acima do header com o titulo */
+
+/* hearder */
+.header {
+    position: relative;
+    z-index: 9;
+    margin-block-start: 40px;
+    letter-spacing: 1.00em;
+    line-height: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    height: 180px;
+}
+
+/* parte cinza, acima do logo  */
+.div-top {
+    background-color: var(--color-tres);
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: 20px;
+}
+
+/* Logo do site */
+.div-top img {
+    position: relative;
+    z-index: 2;
+    top: 60px;
+    width: 323px;
+    
+}
+
+/* a div da barra de navegação  */
+.navbar {
+    background-color: var(--color-ciznza-barra);
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.7);
+
+}
+
+/* edição dos itens da barra de navegação  */
+.navbar-item {
+    grid: 2;
+    color: var(--color-seis);
+    display: flex;
+    padding-left: 55px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* edição do body da aplicação  */
+.body-style {
+    background-color: var(--color-tres);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+/* INICIO DAS CONFIGURAÇÕES DE SERVIÇOS DIVS */
+.mainServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--color-ciznza-barra);
+}
+
+/* estilização da primeira parte da land do petshoping */
+.services-top {
+    height:400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.services-top img.retangulo {
+    position: relative;
+    left: 150px;
+    bottom: 130px;
+    width: 1160px;
+    height: 260.79px;
+}
+.services-top img.vetor {
+    position: relative;
+    bottom: 160px;
+    left: 110px;
+    width: 435.55px;
+    height: 383.83px;
+}
+
+.banhoTamanhos {
+    display: flex;
+    flex-direction: column;
+}
+.banhoTitleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.banhoTitleBox h1{
+    font-family: 'Baloo', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 96px;
+    color: #194719;
+}
+
+.cardBox{
+    background-color: var(--color-dois) ;
+    height: 736px;
+    width: 1178px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    border-radius: 10px;
+}
+
+.tamanhosPets {
+    background-color: var(--color-um--um);
+    height: 650px;
+    width: 1102px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 15px;
+}
+.plano {
+    background-color: var(--color-um--dois);
+    height: 564px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.plano h3 {
+    font-family: 'Baloo', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 35px;
+    color: #504F4F;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+.plano p {
+    font-family: 'Baloo', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 12px;
+    color: #504F4F;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+.gridImagens{
+    display: grid;
+    grid-template: 100px 100px / 100px 100px;
+    
+    
+}
+.gridImagens img{
+    width: 10vw;
+    
+}

@@ -345,7 +345,7 @@
 }
 
 
-.informacoes-box {
+.informaçoes-box {
     position: relative;
     right: 300px;
     height: 319px;
@@ -360,10 +360,10 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
 
 }
-.informacoes-box h3 {
+.informaçoes-box h3 {
     color: var(--color-seis);
 }
-.informacoes-box button {
+.informaçoes-box button {
     background-color: var(--color-seis);
     margin-top: 10px;
     width: 197px;
@@ -373,8 +373,8 @@
     position: relative;
     right: 30px;
 }
-/* informacoes da div de contato */
-.informacoes-item {
+/* informaçoes da div de contato */
+.informaçoes-item {
     width: 30vw;
     display: flex;
     flex-direction: row;
@@ -383,12 +383,12 @@
     /* background-color: red; */
     margin-top: 20px;
 }
-.informacoes-item  img{
+.informaçoes-item  img{
     position: relative;
     top: 0px;
     width: 3vw;
 }
-.informacoes-item  p{
+.informaçoes-item  p{
     display: flex;
     flex-direction: row;
     margin-left: 10px;
