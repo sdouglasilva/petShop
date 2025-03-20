@@ -151,6 +151,8 @@ main > :first-child {
 .carrousel {
   position: absolute;
   width: 90%;
+  border-radius: 15px;
+
 }
 
 /* acessa a primeira div do carrussel que contem os slides para fazer edição */
@@ -164,12 +166,14 @@ main > :first-child {
   display: flex;
   flex-flow: row nowrap;
   gap: 15px;
+  border-radius: 15px;
+
 }
 
 /* acessa a div que contem todos os slides */
 /* .slide-item  */
 .slide-item {
-  width: 97%;
+  width: 96%;
   height: 70vh;
   right: 100px;
   flex-shrink: 0;
@@ -186,18 +190,23 @@ main > :first-child {
 
 .arrow-left,
 .arrow-right {
-  position: relative;
-  z-index: 9;
-  bottom: 40.08vh;
+  height: 95vh;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
   font-size: 1.25rem;
   line-height: 100px;
   width: 2.9vw;
-  color: #fff;
+  color: #ffffff;
   transition: all 600ms ease-in-out;
   background: linear-gradient(to left, transparent 0%, black 500%);
   opacity: 0.1;
   cursor: pointer;
   border: none;
+  border-radius: 15px;;
 }
 
 .arrow-left:hover,
@@ -206,7 +215,8 @@ main > :first-child {
 }
 
 .arrow-right {
-  left: 92%;
+  right: 0;
+  left: 95%;
   text-align: right;
   background: linear-gradient(to right, transparent 0%, black 200%);
 }
@@ -645,7 +655,7 @@ margin: 0px 0px 0px 7vh;
     height: 95vh;
   }
   .slides {
-    width: 98%;
+    width: 100%;
     height: 95vh;
   }
   .slide{
@@ -657,17 +667,19 @@ margin: 0px 0px 0px 7vh;
     height: 95vh;
   }
   .arrow-left{
-    bottom: 48vh;
+    @media (min-width: 1280px) and (max-width: 1439px) {
+    }
   }
   .arrow-right{
-    left: 95%;
-    bottom: 48vh;
+    @media (min-width: 1280px) and (max-width: 1439px) {
+    }
+    
   }
   .box-dog {
     flex-wrap: nowrap;
     bottom: 38vh;
     @media (min-width: 1280px) and (max-width: 1439px) {
-      bottom: 48vh;
+      bottom: 52vh;
       
     }
   }
@@ -741,5 +753,28 @@ margin: 0px 0px 0px 7vh;
   }
 }
 @media (min-width: 1440px) {  
- 
+ .logoImg{
+  width: 24vw;
+}
+.navbar-item{
+  font-size: 2em;
+}
+main{
+  padding-top: 10vh;
+  padding-bottom: 40vh;
+}
+
+main > :first-child {
+  font-size: 4em;
+  padding: 0px 40px 0px 40px;
+}
+.box-dog{
+  bottom: 53vh;
+  ;
+}
+.box-dog > :first-child {
+  width: 60%;
+  height: unset;
+  bottom: 10vh;
+}
 }
